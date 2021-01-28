@@ -23,11 +23,13 @@ function draw() {
   movingRect.x = World.mouseX;
   movingRect.y = World.mouseY;
   //calling the function
-  if(touching(car,wall))
-  {
-    car.velocityX=0;
-  }
+  //if(touching(car,wall))
+ // {
+ //   car.velocityX=0;
+  //}
   
+bounceoff(car,wall)
+
   if(touching(movingRect,fixedRect))
   {
     movingRect.shapeColor = "red";
@@ -37,7 +39,7 @@ function draw() {
     movingRect.shapeColor = "green";
     fixedRect.shapeColor = "green";
   }
-
+    
    drawSprites();
 }
 
